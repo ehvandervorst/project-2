@@ -1,6 +1,7 @@
+// Creating map object
 var myMap = L.map("map", {
-  center: [37.7749, -122.4194],
-  zoom: 13
+  center: [40.7128, -74.0059],
+  zoom: 11
 });
 
 // Adding tile layer
@@ -13,20 +14,22 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: API_KEY
 }).addTo(myMap);
 
-var newtry = "https://data.sfgov.org/resource/cuks-n6tp.json?$limit=1000";
+// Use this link to get the geojson data.
+var link = "static/data/nyc.geojson";
 
-var test_json = [];
-d3.json(newtry, function(response) {
+// Our style object
+var mapStyle = {
+  color: "white",
+  fillColor: "pink",
+  fillOpacity: 0.5,
+  weight: 1.5
+};
 
-  console.log(response);
-  test_json = response;
-
-  for (var i = 0; i < response.length; i++) {
-    var location = response[i].location;
-
-    if (location) {
-      L.marker([location.coordinates[1], location.coordinates[0]]).addTo(myMap);
-    }
-  }
-
+// Grabbing our GeoJSON data..
+d3.json(link, function(data) {
+  // Creating a geoJSON layer with the retrieved data
+  L.geoJson(data, {
+    // Passing in our style object
+    style: mapStyle
+  }).addTo(myMap);
 });
