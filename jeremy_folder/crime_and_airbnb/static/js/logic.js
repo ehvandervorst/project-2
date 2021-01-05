@@ -1,7 +1,7 @@
 // Create a map object
 var myMap = L.map("map", {
   center: [40.71, -74.01],
-   zoom: 20
+   zoom: 15
 });
   
   // Add a tile layer
@@ -27,7 +27,7 @@ var myMap = L.map("map", {
 d3.csv("static/data/filtered_air_bnb.csv", function(data){
   data.forEach(function(d){
     coordinates = [d.latitude, d.longitude];
-    L.marker(coordinates).bindPopup("<h1>" + d.name + "</h1> <hr> <h3>Price: $" + d.price + "</h3>").addTo(myMap);
+    L.marker(coordinates).bindPopup("<h2>" + d.name + "</h2> <h4>Host Name: " + d.host_name + "</h4>  <hr> <h4>Price: $" + d.price + " (Minimum nights: " + d.minimum_nights + ")</h4>  <hr> <h4>Room Type: " + d.room_type + "</h4>  <hr> <h4>Number of Reviews: " + d.number_of_reviews +" (Last review: " + d.last_review + ")</h4>").addTo(myMap);
   });
 });
 
