@@ -36,12 +36,12 @@ d3.csv("static/data/NYC_crime.csv", function(data){
   data.forEach(function(d){
     
     //coordinates = d.Lat_Lon;
-    coordinates = d.coords_list;
-    console.log(coordinates);
+    latitude = d.latitude;
+    longitude = d.longitude;
 
-    // if(coordinates){
-    //   heatArray.push([coordinates["latitude"], coordinates["longitude"]]);
-    // }
+    if(latitude && longitude){
+       heatArray.push([latitude, longitude]);
+    }
   });
 
   var heatMap = L.heatLayer(heatArray, {
