@@ -17,11 +17,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 // Use this link to get the geojson data.
 var link = "static/data/nyc_yelp_4_stars_75_percentile_outskirts.geojson";
 
-
-
 var man = []
-
-
 
 var geojsonMarkerOptions = {
   radius: 5,
@@ -32,20 +28,15 @@ var geojsonMarkerOptions = {
   fillOpacity: 0.8
 };
 
-
-
-
 // Grabbing our GeoJSON data..
 d3.json(link, function(data) {
   // Creating a GeoJSON layer with the retrieved data
   // this beomes blue and then you can style it however which way you need in the other logic files
-  console.log(data);
+  //console.log(data);
   
   man = data;
 
- console.log(man)
-
-
+ //console.log(man)
 
   // .bindPopup("<h3>"+"<a href=\""+ man['features'][i]['properties']['url'] + "\""+" target=\"_blank\">" + man['features'][i]['properties']['name'] + "</a> </h3> <hr> <h5>Rating " + man['features'][i]['properties']['rating'] + "</h5>")
 var geoJsonMap = L.geoJSON(data, {

@@ -86,7 +86,7 @@ Bronx,5,BX59,Westchester-Unionport,27248,553.94,49.2,4787,16.9,49849
 Bronx,5,BX62,Woodlawn-Wakefield,42483,901.76,47.1,6754,15.4,62175
 Bronx,5,BX63,West Concourse,39282,436.78,89.9,6367,16.7,28758
 Bronx,5,BX75,Crotona Park East,20277,378.51,53.6,3765,17,22123
-Bronx,5,BX98,Rikers Island,11091,390.27,28.4,2142,30.2,
+Bronx,5,BX98,Rikers Island,11091,390.27,28.4,2142,30.2,0
 Bronx,5,BX99,park-cemetery-etc-Bronx,1906,4930.35,0.4,193,23.2,41999
 Manhattan,61,MN01,Marble Hill-Inwood,46746,405.79,115.2,8090,15.3,50627
 Manhattan,61,MN03,Central Harlem North-Polo Grounds,75282,594.66,126.6,15418,17.9,42844
@@ -116,7 +116,7 @@ Manhattan,61,MN35,Washington Heights North,67136,525.9,127.7,13291,18.2,53885
 Manhattan,61,MN36,Washington Heights South,84438,533.01,158.4,20435,21.8,50880
 Manhattan,61,MN40,Upper East Side-Carnegie Hill,61207,460.66,132.9,4856,8.7,173847
 Manhattan,61,MN50,Stuyvesant Town-Cooper Village,21049,132.9,158.4,5719,26,109395
-Manhattan,61,MN99,park-cemetery-etc-Manhattan,1849,1940.99,1,216,11.4,
+Manhattan,61,MN99,park-cemetery-etc-Manhattan,1849,1940.99,1,216,11.4,0
 Queens,81,QN01,South Jamaica,38894,918.87,42.3,7316,16.9,56179
 Queens,81,QN02,Springfield Gardens North,25409,652.77,38.9,3848,13.9,60039
 Queens,81,QN03,Springfield Gardens South-Brookville,20132,991.81,20.3,3153,14.1,82539
@@ -173,7 +173,7 @@ Queens,81,QN70,Astoria,78793,902.94,87.3,16722,22.4,67047
 Queens,81,QN71,Old Astoria,27814,362.67,76.7,5317,21.5,61029
 Queens,81,QN72,Steinway,47534,1290.59,36.8,9405,19.5,74387
 Queens,81,QN76,Baisley Park,34603,969.01,35.7,6457,16.5,69098
-Queens,81,QN98,Airport,0,5151,0,0,0,
+Queens,81,QN98,Airport,0,5151,0,0,0,0
 Queens,81,QN99,park-cemetery-etc-Queens,436,7126.53,0.1,37,23.3,48123
 Staten Island,85,SI01,Annadale-Huguenot-Prince's Bay-Eltingville,27770,3292.86,8.4,3868,13.4,102210
 Staten Island,85,SI05,New Springville-Bloomfield-Travis,39597,7083.27,5.6,5139,12.3,84731
