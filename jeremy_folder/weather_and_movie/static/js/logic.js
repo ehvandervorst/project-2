@@ -20,20 +20,25 @@ var chart = new Chart('lineChart', {
   data: {
     labels: date,
     datasets:[{
+      borderColor: "#3232FF",
       data: precipitation,
-      label: "Precipitation levels"
+      label: "Precipitation levels (in inches)"
     },
     {
+      borderColor: "#808080",
       data: snow,
-      label: "Snow Levels"
+      label: "Snow Levels (in inches)"
     },
     {
+      borderColor: "#C81414",
       data: avgTemp,
       label: "Average Temperature (in Fahrenheit)"
     }
     ]
   },
   options: {
+    responsive: true,
+    maintainAspectRatio:true,
     title: {
       display: true,
       text: 'New York Temperature From the past 5 years'
