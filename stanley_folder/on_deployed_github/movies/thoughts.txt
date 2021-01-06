@@ -1,3 +1,0 @@
-Movie ratings: All of them are at or above a rating of 6
-
-https://firedynasty.github.io/second_project/sixth_step_movie/
