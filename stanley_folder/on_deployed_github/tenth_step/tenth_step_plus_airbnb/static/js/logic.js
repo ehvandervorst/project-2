@@ -59,6 +59,22 @@ var geojsonMarkerOptions3 = {
   fillOpacity: 0.8
 };
 
+var movies_list = [{
+  location: [40.70435915, -74.01472628],
+  name: "Men in Black (1997)",
+  description: "Filmed at Battery park"
+},
+{
+  location: [40.7525888, -73.97975564],
+  name: "Spider-man (2002)",
+  description: "Filmed at Midtown Manhattan"
+},
+{
+  location: [40.72539684, -73.98378432],
+  name: "The Godfather Part II (1974)",
+  description: "Filmed at 6th St and Ave A, East Village"
+}
+]
 
 
 
@@ -243,6 +259,14 @@ function makeMyMap(error, movies, nyc_yelp, demographics, nyc_crime, airbnb)  {
     }
   });
 
+  for (var i = 0; i < movies_list.length; i++) {
+    var movie_ = movies_list[i];
+    L.marker(movie_.location)
+     .bindPopup("<h1>" + movie_.name + "</h1> <hr> <h3>" + movie_.description + "</h3>")
+     .addTo(myMap);
+ 
+ }
+ 
   //https://gis.stackexchange.com/questions/176174/toggling-leaflet-legends
 
 
