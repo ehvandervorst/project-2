@@ -24,7 +24,7 @@ var man = []
 
 
 var geojsonMarkerOptions = {
-  radius: 3,
+  radius: 5,
   fillColor: "#4682B4",
   color: "#000",
   weight: 1,

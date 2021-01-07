@@ -9,9 +9,6 @@ html {
   height: 100%;
 }
 
-.leaflet-popup-content {
-  text-align: left;
-}
 
 /* CSS from the Leaflet-Choropleth documentation */
 .legend {
@@ -47,10 +44,3 @@ html {
   float: right;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
